@@ -1,0 +1,99 @@
+{
+  "version": 4,
+  "terraform_version": "1.13.3",
+  "serial": 127,
+  "lineage": "0e1b59f5-eafd-b8b9-0396-8aca0e07f206",
+  "outputs": {},
+  "resources": [
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_area",
+      "name": "area_0",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": [
+        {
+          "index_key": "Global/Chile",
+          "schema_version": 0,
+          "attributes": {
+            "id": "d716a1b2-a827-45f0-bc2c-81c54b4a7c3b",
+            "name": "Chile",
+            "parent_name": "Global"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "dependencies": [
+            "module.catalyst_center.catalystcenter_credentials_cli.cli_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_read.https_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_write.https_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_read.snmpv2_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_write.snmpv2_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv3.snmpv3_credentials",
+            "module.catalyst_center.catalystcenter_discovery.discovery",
+            "module.catalyst_center.data.catalystcenter_credentials_cli.cli_credentials"
+          ]
+        },
+        {
+          "index_key": "Global/United States",
+          "schema_version": 0,
+          "attributes": {
+            "id": "691a9702-947d-4864-a667-6d0803bdcba0",
+            "name": "United States",
+            "parent_name": "Global"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "dependencies": [
+            "module.catalyst_center.catalystcenter_credentials_cli.cli_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_read.https_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_write.https_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_read.snmpv2_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_write.snmpv2_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv3.snmpv3_credentials",
+            "module.catalyst_center.catalystcenter_discovery.discovery",
+            "module.catalyst_center.data.catalystcenter_credentials_cli.cli_credentials"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_area",
+      "name": "area_1",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": [
+        {
+          "index_key": "Global/United States/Golden Hills Campus",
+          "schema_version": 0,
+          "attributes": {
+            "id": "9ecd8b9d-c550-4090-af4a-00ccb9660f0e",
+            "name": null,
+            "parent_name": "Global/United States"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "dependencies": [
+            "module.catalyst_center.catalystcenter_area.area_0",
+            "module.catalyst_center.catalystcenter_credentials_cli.cli_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_read.https_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_write.https_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_read.snmpv2_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_write.snmpv2_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv3.snmpv3_credentials",
+            "module.catalyst_center.catalystcenter_discovery.discovery",
+            "module.catalyst_center.data.catalystcenter_credentials_cli.cli_credentials"
+          ]
+        }
+      ]
+    }
+  ],
+  "check_results": [
+    {
+      "object_kind": "resource",
+      "config_addr": "module.catalyst_center.terraform_data.validation",
+      "status": "unknown",
+      "objects": null
+    }
+  ]
+}

@@ -1,0 +1,1124 @@
+{
+  "version": 4,
+  "terraform_version": "1.13.3",
+  "serial": 84,
+  "lineage": "0e1b59f5-eafd-b8b9-0396-8aca0e07f206",
+  "outputs": {},
+  "resources": [
+    {
+      "module": "module.catalyst_center",
+      "mode": "data",
+      "type": "catalystcenter_credentials_cli",
+      "name": "cli_credentials",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "data",
+      "type": "catalystcenter_network_profile",
+      "name": "switching_network_profile",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "data",
+      "type": "catalystcenter_project",
+      "name": "project",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "data",
+      "type": "catalystcenter_template",
+      "name": "template",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "data",
+      "type": "catalystcenter_transit_network",
+      "name": "transit",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "data",
+      "type": "catalystcenter_wireless_profile",
+      "name": "wireless_profile",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_aaa_settings",
+      "name": "aaa_servers",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_aaa_settings",
+      "name": "global_aaa_servers",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_area",
+      "name": "area_0",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": [
+        {
+          "index_key": "Global/Chile",
+          "schema_version": 0,
+          "attributes": {
+            "id": "d716a1b2-a827-45f0-bc2c-81c54b4a7c3b",
+            "name": "Chile",
+            "parent_name": "Global"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "dependencies": [
+            "module.catalyst_center.catalystcenter_credentials_cli.cli_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_read.https_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_write.https_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_read.snmpv2_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_write.snmpv2_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv3.snmpv3_credentials",
+            "module.catalyst_center.catalystcenter_discovery.discovery",
+            "module.catalyst_center.data.catalystcenter_credentials_cli.cli_credentials"
+          ]
+        },
+        {
+          "index_key": "Global/United States",
+          "schema_version": 0,
+          "attributes": {
+            "id": "691a9702-947d-4864-a667-6d0803bdcba0",
+            "name": "United States",
+            "parent_name": "Global"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "dependencies": [
+            "module.catalyst_center.catalystcenter_credentials_cli.cli_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_read.https_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_write.https_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_read.snmpv2_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_write.snmpv2_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv3.snmpv3_credentials",
+            "module.catalyst_center.catalystcenter_discovery.discovery",
+            "module.catalyst_center.data.catalystcenter_credentials_cli.cli_credentials"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_area",
+      "name": "area_1",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": [
+        {
+          "index_key": "Global/Chile/CscoChile",
+          "schema_version": 0,
+          "attributes": {
+            "id": "521d1935-2f1f-4a3b-8f1d-b4346b9fec3a",
+            "name": "CscoChile",
+            "parent_name": "Global/Chile"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "dependencies": [
+            "module.catalyst_center.catalystcenter_area.area_0",
+            "module.catalyst_center.catalystcenter_credentials_cli.cli_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_read.https_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_write.https_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_read.snmpv2_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_write.snmpv2_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv3.snmpv3_credentials",
+            "module.catalyst_center.catalystcenter_discovery.discovery",
+            "module.catalyst_center.data.catalystcenter_credentials_cli.cli_credentials"
+          ]
+        },
+        {
+          "index_key": "Global/United States/Golden Hills Campus",
+          "schema_version": 0,
+          "attributes": {
+            "id": "9ecd8b9d-c550-4090-af4a-00ccb9660f0e",
+            "name": "Golden Hills Campus",
+            "parent_name": "Global/United States"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "dependencies": [
+            "module.catalyst_center.catalystcenter_area.area_0",
+            "module.catalyst_center.catalystcenter_credentials_cli.cli_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_read.https_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_write.https_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_read.snmpv2_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_write.snmpv2_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv3.snmpv3_credentials",
+            "module.catalyst_center.catalystcenter_discovery.discovery",
+            "module.catalyst_center.data.catalystcenter_credentials_cli.cli_credentials"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_area",
+      "name": "area_2",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_area",
+      "name": "area_3",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_assign_credentials",
+      "name": "assign_credentials",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_assign_credentials",
+      "name": "global_assign_credentials",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_assign_device_to_site",
+      "name": "devices_to_site",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_assign_device_to_site",
+      "name": "wireless_devices_to_site",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_assign_devices_to_tag",
+      "name": "device_to_tag",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_assign_managed_ap_locations",
+      "name": "managed_ap_locations",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_assign_templates_to_tag",
+      "name": "template_to_tag",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_associate_site_to_network_profile",
+      "name": "site_to_network_profile",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_associate_site_to_network_profile",
+      "name": "site_to_wireless_network_profile",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_banner_settings",
+      "name": "banner",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_banner_settings",
+      "name": "global_banner",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_building",
+      "name": "building",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": [
+        {
+          "index_key": "Global/Chile/CscoChile/EdificioCscoChile",
+          "schema_version": 0,
+          "attributes": {
+            "address": "Edificio El Golf, Av 3650, Suites 201 and 301, Las Condes, Región Metropolitana",
+            "country": "Chile",
+            "id": "b1148e7b-4878-4924-bd4f-d15324fcb5cb",
+            "latitude": -33.4153315518453,
+            "longitude": -70.59234400688578,
+            "name": "EdificioCscoChile",
+            "parent_name": "Global/Chile/CscoChile"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "dependencies": [
+            "module.catalyst_center.catalystcenter_area.area_0",
+            "module.catalyst_center.catalystcenter_area.area_1",
+            "module.catalyst_center.catalystcenter_area.area_2",
+            "module.catalyst_center.catalystcenter_area.area_3",
+            "module.catalyst_center.catalystcenter_credentials_cli.cli_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_read.https_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_write.https_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_read.snmpv2_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_write.snmpv2_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv3.snmpv3_credentials",
+            "module.catalyst_center.catalystcenter_discovery.discovery",
+            "module.catalyst_center.data.catalystcenter_credentials_cli.cli_credentials"
+          ]
+        },
+        {
+          "index_key": "Global/United States/Golden Hills Campus/Sunset Tower",
+          "schema_version": 0,
+          "attributes": {
+            "address": "8358 Sunset Blvd, Los Angeles, CA 90069",
+            "country": "United States",
+            "id": "b5475a03-36b8-468c-b5cd-b65e2bc9c58f",
+            "latitude": 34.099,
+            "longitude": -118.366,
+            "name": "Sunset Tower",
+            "parent_name": "Global/United States/Golden Hills Campus"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "dependencies": [
+            "module.catalyst_center.catalystcenter_area.area_0",
+            "module.catalyst_center.catalystcenter_area.area_1",
+            "module.catalyst_center.catalystcenter_area.area_2",
+            "module.catalyst_center.catalystcenter_area.area_3",
+            "module.catalyst_center.catalystcenter_credentials_cli.cli_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_read.https_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_write.https_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_read.snmpv2_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_write.snmpv2_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv3.snmpv3_credentials",
+            "module.catalyst_center.catalystcenter_discovery.discovery",
+            "module.catalyst_center.data.catalystcenter_credentials_cli.cli_credentials"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_credentials_cli",
+      "name": "cli_credentials",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_credentials_https_read",
+      "name": "https_read_credentials",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_credentials_https_write",
+      "name": "https_write_credentials",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_credentials_snmpv2_read",
+      "name": "snmpv2_read_credentials",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_credentials_snmpv2_write",
+      "name": "snmpv2_write_credentials",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_credentials_snmpv3",
+      "name": "snmpv3_credentials",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_deploy_template",
+      "name": "composite_template_deploy",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_deploy_template",
+      "name": "regular_template_deploy",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_device_role",
+      "name": "role",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_dhcp_settings",
+      "name": "dhcp_servers",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_dhcp_settings",
+      "name": "global_dhcp_servers",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_discovery",
+      "name": "discovery",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_dns_settings",
+      "name": "dns_settings",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_dns_settings",
+      "name": "global_dns_settings",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_fabric_device",
+      "name": "border_device",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_fabric_device",
+      "name": "edge_device",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_fabric_device",
+      "name": "wireless_controller",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_fabric_l3_handoff_sda_transit",
+      "name": "sda_transit",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_fabric_provision_device",
+      "name": "provision_device",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_fabric_site",
+      "name": "fabric_site",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_fabric_zone",
+      "name": "fabric_zone",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_floor",
+      "name": "floor",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": [
+        {
+          "index_key": "Global/Chile/CscoChile/EdificioCscoChile/Piso1",
+          "schema_version": 0,
+          "attributes": {
+            "floor_number": 1,
+            "height": 3,
+            "id": "fce2f7dc-b919-498f-b81e-efc5af33d073",
+            "length": 23,
+            "name": "Piso1",
+            "parent_name": "Global/Chile/CscoChile/EdificioCscoChile",
+            "rf_model": "Cubes And Walled Offices",
+            "width": 30
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "dependencies": [
+            "module.catalyst_center.catalystcenter_area.area_0",
+            "module.catalyst_center.catalystcenter_area.area_1",
+            "module.catalyst_center.catalystcenter_area.area_2",
+            "module.catalyst_center.catalystcenter_area.area_3",
+            "module.catalyst_center.catalystcenter_building.building",
+            "module.catalyst_center.catalystcenter_credentials_cli.cli_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_read.https_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_write.https_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_read.snmpv2_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_write.snmpv2_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv3.snmpv3_credentials",
+            "module.catalyst_center.catalystcenter_discovery.discovery",
+            "module.catalyst_center.data.catalystcenter_credentials_cli.cli_credentials"
+          ]
+        },
+        {
+          "index_key": "Global/United States/Golden Hills Campus/Sunset Tower/FLOOR_1",
+          "schema_version": 0,
+          "attributes": {
+            "floor_number": 1,
+            "height": 3,
+            "id": "bfedd003-dd29-4a28-94a4-c231e31b327e",
+            "length": 23,
+            "name": "FLOOR_1",
+            "parent_name": "Global/United States/Golden Hills Campus/Sunset Tower",
+            "rf_model": "Cubes And Walled Offices",
+            "width": 30
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "dependencies": [
+            "module.catalyst_center.catalystcenter_area.area_0",
+            "module.catalyst_center.catalystcenter_area.area_1",
+            "module.catalyst_center.catalystcenter_area.area_2",
+            "module.catalyst_center.catalystcenter_area.area_3",
+            "module.catalyst_center.catalystcenter_building.building",
+            "module.catalyst_center.catalystcenter_credentials_cli.cli_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_read.https_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_write.https_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_read.snmpv2_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_write.snmpv2_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv3.snmpv3_credentials",
+            "module.catalyst_center.catalystcenter_discovery.discovery",
+            "module.catalyst_center.data.catalystcenter_credentials_cli.cli_credentials"
+          ]
+        },
+        {
+          "index_key": "Global/United States/Golden Hills Campus/Sunset Tower/FLOOR_2",
+          "schema_version": 0,
+          "attributes": {
+            "floor_number": 2,
+            "height": 3,
+            "id": "1c2de6b8-d6e1-4688-86df-a95d8a5959b2",
+            "length": 23,
+            "name": "FLOOR_2",
+            "parent_name": "Global/United States/Golden Hills Campus/Sunset Tower",
+            "rf_model": "Cubes And Walled Offices",
+            "width": 30
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "dependencies": [
+            "module.catalyst_center.catalystcenter_area.area_0",
+            "module.catalyst_center.catalystcenter_area.area_1",
+            "module.catalyst_center.catalystcenter_area.area_2",
+            "module.catalyst_center.catalystcenter_area.area_3",
+            "module.catalyst_center.catalystcenter_building.building",
+            "module.catalyst_center.catalystcenter_credentials_cli.cli_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_read.https_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_write.https_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_read.snmpv2_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_write.snmpv2_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv3.snmpv3_credentials",
+            "module.catalyst_center.catalystcenter_discovery.discovery",
+            "module.catalyst_center.data.catalystcenter_credentials_cli.cli_credentials"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_ip_pool",
+      "name": "ip_pool_v4",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": [
+        {
+          "index_key": "US_BYOD",
+          "schema_version": 0,
+          "attributes": {
+            "dhcp_server_ips": [
+              "10.204.0.1"
+            ],
+            "dns_server_ips": [
+              "10.204.0.1"
+            ],
+            "gateway": null,
+            "id": "24c18863-2400-4ed2-92f1-dc94e11783da",
+            "ip_address_space": "IPv4",
+            "ip_subnet": "10.204.0.0/16",
+            "name": "US_BYOD",
+            "type": "generic"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "dependencies": [
+            "module.catalyst_center.catalystcenter_area.area_0",
+            "module.catalyst_center.catalystcenter_area.area_1",
+            "module.catalyst_center.catalystcenter_area.area_2",
+            "module.catalyst_center.catalystcenter_area.area_3",
+            "module.catalyst_center.catalystcenter_building.building",
+            "module.catalyst_center.catalystcenter_credentials_cli.cli_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_read.https_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_write.https_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_read.snmpv2_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_write.snmpv2_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv3.snmpv3_credentials",
+            "module.catalyst_center.catalystcenter_discovery.discovery",
+            "module.catalyst_center.catalystcenter_floor.floor",
+            "module.catalyst_center.data.catalystcenter_credentials_cli.cli_credentials"
+          ]
+        },
+        {
+          "index_key": "US_CORP",
+          "schema_version": 0,
+          "attributes": {
+            "dhcp_server_ips": [
+              "10.201.0.1"
+            ],
+            "dns_server_ips": [
+              "10.201.0.1"
+            ],
+            "gateway": null,
+            "id": "ece48fd8-2c4b-424b-9527-acc5f8e61def",
+            "ip_address_space": "IPv4",
+            "ip_subnet": "10.201.0.0/16",
+            "name": "US_CORP",
+            "type": "generic"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "dependencies": [
+            "module.catalyst_center.catalystcenter_area.area_0",
+            "module.catalyst_center.catalystcenter_area.area_1",
+            "module.catalyst_center.catalystcenter_area.area_2",
+            "module.catalyst_center.catalystcenter_area.area_3",
+            "module.catalyst_center.catalystcenter_building.building",
+            "module.catalyst_center.catalystcenter_credentials_cli.cli_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_read.https_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_write.https_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_read.snmpv2_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_write.snmpv2_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv3.snmpv3_credentials",
+            "module.catalyst_center.catalystcenter_discovery.discovery",
+            "module.catalyst_center.catalystcenter_floor.floor",
+            "module.catalyst_center.data.catalystcenter_credentials_cli.cli_credentials"
+          ]
+        },
+        {
+          "index_key": "US_GUEST",
+          "schema_version": 0,
+          "attributes": {
+            "dhcp_server_ips": [
+              "10.203.0.1"
+            ],
+            "dns_server_ips": [
+              "10.203.0.1"
+            ],
+            "gateway": null,
+            "id": "54a4ebf8-c0ff-4e1e-bf55-a4644cb466e3",
+            "ip_address_space": "IPv4",
+            "ip_subnet": "10.203.0.0/16",
+            "name": "US_GUEST",
+            "type": "generic"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "dependencies": [
+            "module.catalyst_center.catalystcenter_area.area_0",
+            "module.catalyst_center.catalystcenter_area.area_1",
+            "module.catalyst_center.catalystcenter_area.area_2",
+            "module.catalyst_center.catalystcenter_area.area_3",
+            "module.catalyst_center.catalystcenter_building.building",
+            "module.catalyst_center.catalystcenter_credentials_cli.cli_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_read.https_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_write.https_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_read.snmpv2_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_write.snmpv2_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv3.snmpv3_credentials",
+            "module.catalyst_center.catalystcenter_discovery.discovery",
+            "module.catalyst_center.catalystcenter_floor.floor",
+            "module.catalyst_center.data.catalystcenter_credentials_cli.cli_credentials"
+          ]
+        },
+        {
+          "index_key": "US_TECH",
+          "schema_version": 0,
+          "attributes": {
+            "dhcp_server_ips": [
+              "10.202.0.1"
+            ],
+            "dns_server_ips": [
+              "10.202.0.1"
+            ],
+            "gateway": null,
+            "id": "46d2f1ea-4859-4904-b630-fc4dfffe75b7",
+            "ip_address_space": "IPv4",
+            "ip_subnet": "10.202.0.0/16",
+            "name": "US_TECH",
+            "type": "generic"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "dependencies": [
+            "module.catalyst_center.catalystcenter_area.area_0",
+            "module.catalyst_center.catalystcenter_area.area_1",
+            "module.catalyst_center.catalystcenter_area.area_2",
+            "module.catalyst_center.catalystcenter_area.area_3",
+            "module.catalyst_center.catalystcenter_building.building",
+            "module.catalyst_center.catalystcenter_credentials_cli.cli_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_read.https_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_write.https_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_read.snmpv2_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_write.snmpv2_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv3.snmpv3_credentials",
+            "module.catalyst_center.catalystcenter_discovery.discovery",
+            "module.catalyst_center.catalystcenter_floor.floor",
+            "module.catalyst_center.data.catalystcenter_credentials_cli.cli_credentials"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_ip_pool",
+      "name": "ip_pool_v6",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_ip_pool_reservation",
+      "name": "pool_reservation",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": [
+        {
+          "index_key": "DOT_GUEST",
+          "schema_version": 0,
+          "attributes": {
+            "id": "2a3aa579-d040-48f4-888d-81eccbda6d6d",
+            "ipv4_dhcp_servers": null,
+            "ipv4_dns_servers": null,
+            "ipv4_gateway": null,
+            "ipv4_global_pool": "10.203.0.0/16",
+            "ipv4_prefix": true,
+            "ipv4_prefix_length": 24,
+            "ipv4_subnet": "10.203.1.0",
+            "ipv4_total_host": null,
+            "ipv6_address_space": false,
+            "ipv6_dhcp_servers": null,
+            "ipv6_dns_servers": null,
+            "ipv6_gateway": null,
+            "ipv6_global_pool": null,
+            "ipv6_prefix": false,
+            "ipv6_prefix_length": null,
+            "ipv6_subnet": null,
+            "ipv6_total_host": null,
+            "name": null,
+            "site_id": "b1148e7b-4878-4924-bd4f-d15324fcb5cb",
+            "slaac_support": null,
+            "type": "Generic"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "dependencies": [
+            "module.catalyst_center.catalystcenter_area.area_0",
+            "module.catalyst_center.catalystcenter_area.area_1",
+            "module.catalyst_center.catalystcenter_area.area_2",
+            "module.catalyst_center.catalystcenter_area.area_3",
+            "module.catalyst_center.catalystcenter_building.building",
+            "module.catalyst_center.catalystcenter_credentials_cli.cli_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_read.https_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_write.https_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_read.snmpv2_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_write.snmpv2_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv3.snmpv3_credentials",
+            "module.catalyst_center.catalystcenter_discovery.discovery",
+            "module.catalyst_center.catalystcenter_floor.floor",
+            "module.catalyst_center.catalystcenter_ip_pool.ip_pool_v4",
+            "module.catalyst_center.catalystcenter_ip_pool.ip_pool_v6",
+            "module.catalyst_center.data.catalystcenter_credentials_cli.cli_credentials"
+          ]
+        },
+        {
+          "index_key": "DOT_TECH",
+          "schema_version": 0,
+          "attributes": {
+            "id": "e1c6a9fd-91a4-46f6-a4b9-38ccd79bc2e2",
+            "ipv4_dhcp_servers": null,
+            "ipv4_dns_servers": null,
+            "ipv4_gateway": null,
+            "ipv4_global_pool": "10.202.0.0/16",
+            "ipv4_prefix": true,
+            "ipv4_prefix_length": 24,
+            "ipv4_subnet": "10.202.1.0",
+            "ipv4_total_host": null,
+            "ipv6_address_space": false,
+            "ipv6_dhcp_servers": null,
+            "ipv6_dns_servers": null,
+            "ipv6_gateway": null,
+            "ipv6_global_pool": null,
+            "ipv6_prefix": false,
+            "ipv6_prefix_length": null,
+            "ipv6_subnet": null,
+            "ipv6_total_host": null,
+            "name": null,
+            "site_id": "b1148e7b-4878-4924-bd4f-d15324fcb5cb",
+            "slaac_support": null,
+            "type": "Generic"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "dependencies": [
+            "module.catalyst_center.catalystcenter_area.area_0",
+            "module.catalyst_center.catalystcenter_area.area_1",
+            "module.catalyst_center.catalystcenter_area.area_2",
+            "module.catalyst_center.catalystcenter_area.area_3",
+            "module.catalyst_center.catalystcenter_building.building",
+            "module.catalyst_center.catalystcenter_credentials_cli.cli_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_read.https_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_https_write.https_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_read.snmpv2_read_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv2_write.snmpv2_write_credentials",
+            "module.catalyst_center.catalystcenter_credentials_snmpv3.snmpv3_credentials",
+            "module.catalyst_center.catalystcenter_discovery.discovery",
+            "module.catalyst_center.catalystcenter_floor.floor",
+            "module.catalyst_center.catalystcenter_ip_pool.ip_pool_v4",
+            "module.catalyst_center.catalystcenter_ip_pool.ip_pool_v6",
+            "module.catalyst_center.data.catalystcenter_credentials_cli.cli_credentials"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_lan_automation",
+      "name": "lanauto_link",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_network_profile",
+      "name": "switching_network_profile",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_ntp_settings",
+      "name": "global_ntp_servers",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_ntp_settings",
+      "name": "ntp_servers",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_pnp_config_preview",
+      "name": "config_preview",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_pnp_device",
+      "name": "pnp_device",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_pnp_device_claim_site",
+      "name": "claim_device",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_project",
+      "name": "project",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_tag",
+      "name": "tag",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_telemetry_settings",
+      "name": "global_telemetry_settings",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_telemetry_settings",
+      "name": "telemetry_settings",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_template",
+      "name": "composite_template",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_template",
+      "name": "regular_template",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_template_version",
+      "name": "composite_commit_version",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_template_version",
+      "name": "regular_commit_version",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_timezone_settings",
+      "name": "global_timezone",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_timezone_settings",
+      "name": "timezone",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_transit_network",
+      "name": "transit",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_update_authentication_profile",
+      "name": "closed_authentication",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_update_authentication_profile",
+      "name": "global_authentication_template",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_update_authentication_profile",
+      "name": "low_impact",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_update_authentication_profile",
+      "name": "open_authentication",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_wireless_device_provision",
+      "name": "wireless_controller",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_wireless_profile",
+      "name": "wireless_profile",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_wireless_rf_profile",
+      "name": "rf_profile",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "catalystcenter_wireless_ssid",
+      "name": "ssid",
+      "provider": "provider[\"registry.terraform.io/ciscodevnet/catalystcenter\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "local_sensitive_file",
+      "name": "defaults",
+      "provider": "provider[\"registry.terraform.io/hashicorp/local\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "time_sleep",
+      "name": "provision_device_wait",
+      "provider": "provider[\"registry.terraform.io/hashicorp/time\"]",
+      "instances": []
+    },
+    {
+      "module": "module.catalyst_center",
+      "mode": "managed",
+      "type": "time_sleep",
+      "name": "template_wait",
+      "provider": "provider[\"registry.terraform.io/hashicorp/time\"]",
+      "instances": []
+    }
+  ],
+  "check_results": [
+    {
+      "object_kind": "resource",
+      "config_addr": "module.catalyst_center.terraform_data.validation",
+      "status": "unknown",
+      "objects": null
+    }
+  ]
+}
