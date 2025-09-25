@@ -10,8 +10,8 @@ catalyst_center:
         parent_name: Global/United States
       - name: Oceanfront Mansion
         parent_name: Global/United States
-      - name: Desert Oasis Branch
-        parent_name: Global/United States
+      - name: Chile
+        parent_name: Global
     buildings:
       - name: Sunset Tower
         latitude: 34.099
