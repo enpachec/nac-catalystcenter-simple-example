@@ -8,9 +8,9 @@ terraform {
 }
 
 provider "catalystcenter" {
-  username    = "username"
-  password    = "password"
-  url         = "https://dnac.url"
+  username    = "devnetuser2"
+  password    = "Cisco123!"
+  url         = "https://sandboxdnac2.cisco.com"
   max_timeout = 600
 }
 
