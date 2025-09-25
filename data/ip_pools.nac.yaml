@@ -19,9 +19,6 @@ catalyst_center:
           - name: WCP_CORP
             prefix_length: 24
             subnet: 10.201.3.0
-          - name: ADM_CORP
-            prefix_length: 24
-            subnet: 10.201.4.0
       - name: US_TECH
         ip_address_space: IPv4
         ip_pool_cidr: 10.202.0.0/16
@@ -36,12 +33,6 @@ catalyst_center:
           - name: ST_TECH
             prefix_length: 24
             subnet: 10.202.2.0
-          - name: WCP_TECH
-            prefix_length: 24
-            subnet: 10.202.3.0
-          - name: ADM_TECH
-            prefix_length: 24
-            subnet: 10.202.4.0
       - name: US_GUEST
         ip_address_space: IPv4
         ip_pool_cidr: 10.203.0.0/16
