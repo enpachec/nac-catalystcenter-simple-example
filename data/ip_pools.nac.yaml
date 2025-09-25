@@ -5,10 +5,10 @@ catalyst_center:
       - name: US_CORP
         ip_address_space: IPv4
         ip_pool_cidr: 10.201.0.0/16
-#        dhcp_servers:
-#          - 10.201.0.1
-#        dns_servers:
-#          - 10.201.0.1
+        dhcp_servers:
+          - 10.201.0.1
+        dns_servers:
+          - 10.201.0.1
         ip_pools_reservations:
           - name: DOT_CORP
             prefix_length: 24
@@ -18,8 +18,6 @@ catalyst_center:
             dns_servers:
               - 8.8.8.8
               - 8.8.4.4
-        dns_servers:
-          - 10.201.0.1
           - name: ST_CORP
             prefix_length: 24
             subnet: 10.201.2.0
