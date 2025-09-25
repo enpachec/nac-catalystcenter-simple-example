@@ -31,8 +31,8 @@ catalyst_center:
         ip_pools_reservations:
           - DOT_CORP
           - DOT_TECH
-          - DOT_GUEST
-          - DOT_BYOD
+#          - DOT_GUEST
+#          - DOT_BYOD
     floors:
       - name: FLOOR_1
         floor_number: 1
